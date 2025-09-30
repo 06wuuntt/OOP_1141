@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googlemock/include -isystem /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googlemock -isystem /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -isystem /home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googlemock/include -isystem /home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googlemock -isystem /home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest/include -isystem /home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20
 

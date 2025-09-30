@@ -16,7 +16,7 @@ sorts the shapes in file _input.txt_ in decreasing order by perimeter, and write
 - [ ] F1: Read input file
 - [ ] F2: Write output file
 - [ ] F3: Shapes representation and computation
-    - [ ] T3.1: point
+    - [x] T3.1: point
     - [ ] T3.2: triangles
     - [ ] T3.3: circle
     - [ ] T3.4: rectangles

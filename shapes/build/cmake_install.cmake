@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes
+# Install script for directory: /home/wuuntt/1141_OOP/OOP_1141/shapes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wuuntt/1141_OOP/OOP_1141/shapes/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

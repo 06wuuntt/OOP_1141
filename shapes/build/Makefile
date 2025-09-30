@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes
+CMAKE_SOURCE_DIR = /home/wuuntt/1141_OOP/OOP_1141/shapes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build
+CMAKE_BINARY_DIR = /home/wuuntt/1141_OOP/OOP_1141/shapes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/CMakeFiles /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles /home/wuuntt/1141_OOP/OOP_1141/shapes/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +170,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named shapes_lib
+
+# Build rule for target.
+shapes_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shapes_lib
+.PHONY : shapes_lib
+
+# fast build rule for target.
+shapes_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/build
+.PHONY : shapes_lib/fast
 
 #=============================================================================
 # Target rules for targets named shapes_tests
@@ -236,6 +249,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/point.o: src/point.cpp.o
+.PHONY : src/point.o
+
+# target to build an object file
+src/point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/point.cpp.o
+.PHONY : src/point.cpp.o
+
+src/point.i: src/point.cpp.i
+.PHONY : src/point.i
+
+# target to preprocess a source file
+src/point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/point.cpp.i
+.PHONY : src/point.cpp.i
+
+src/point.s: src/point.cpp.s
+.PHONY : src/point.s
+
+# target to generate assembly for a file
+src/point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/point.cpp.s
+.PHONY : src/point.cpp.s
+
 tests/dummy_test.o: tests/dummy_test.cpp.o
 .PHONY : tests/dummy_test.o
 
@@ -301,7 +338,11 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... shapes_lib"
 	@echo "... shapes_tests"
+	@echo "... src/point.o"
+	@echo "... src/point.i"
+	@echo "... src/point.s"
 	@echo "... tests/dummy_test.o"
 	@echo "... tests/dummy_test.i"
 	@echo "... tests/dummy_test.s"

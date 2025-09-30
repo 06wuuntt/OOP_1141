@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/src -isystem /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/wuuntt/1141_OOP/OOP_1141/shapes/src -isystem /home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest/include -isystem /home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -std=gnu++20
 

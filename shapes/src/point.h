@@ -3,3 +3,5 @@ class Point {
         double x;
         double y;    
 };
+
+double distance(Point p, Point q);

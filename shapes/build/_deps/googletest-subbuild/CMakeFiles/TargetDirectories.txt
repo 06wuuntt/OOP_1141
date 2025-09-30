@@ -1,3 +1,3 @@
-/mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-/mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/mnt/c/Users/吳恩彤/Desktop/file/university/code/1141_OOP/OOP_1141/shapes/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
+/home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/home/wuuntt/1141_OOP/OOP_1141/shapes/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
