@@ -22,4 +22,9 @@ sorts the shapes in file _input.txt_ in decreasing order by perimeter, and write
     - [ ] T3.4: rectangles
     - [ ] T3.5: convex polygon
 - [ ] F4: Sorting by area or perimeter
+    - [x] T4.1: Learn how to sort integers with standard library
+    - [ ] T4.2: Sort shapes by area by increasing order
+    - [ ] T4.3: Sort shapes by area by decreasing order
+    - [ ] T4.4: Sort shapes by perimeter by increasing order
+    - [ ] T4.5: Sort shapes by perimeter by decreasing order
 - [ ] F5: Command line argument processing
