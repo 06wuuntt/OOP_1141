@@ -185,17 +185,30 @@ shapes_lib/fast:
 .PHONY : shapes_lib/fast
 
 #=============================================================================
-# Target rules for targets named shapes_tests
+# Target rules for targets named dummy_test
 
 # Build rule for target.
-shapes_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shapes_tests
-.PHONY : shapes_tests
+dummy_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dummy_test
+.PHONY : dummy_test
 
 # fast build rule for target.
-shapes_tests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/build
-.PHONY : shapes_tests/fast
+dummy_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_test.dir/build.make CMakeFiles/dummy_test.dir/build
+.PHONY : dummy_test/fast
+
+#=============================================================================
+# Target rules for targets named shapes_test
+
+# Build rule for target.
+shapes_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shapes_test
+.PHONY : shapes_test
+
+# fast build rule for target.
+shapes_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_test.dir/build.make CMakeFiles/shapes_test.dir/build
+.PHONY : shapes_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -249,6 +262,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/circle.o: src/circle.cpp.o
+.PHONY : src/circle.o
+
+# target to build an object file
+src/circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/circle.cpp.o
+.PHONY : src/circle.cpp.o
+
+src/circle.i: src/circle.cpp.i
+.PHONY : src/circle.i
+
+# target to preprocess a source file
+src/circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/circle.cpp.i
+.PHONY : src/circle.cpp.i
+
+src/circle.s: src/circle.cpp.s
+.PHONY : src/circle.s
+
+# target to generate assembly for a file
+src/circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/circle.cpp.s
+.PHONY : src/circle.cpp.s
+
 src/point.o: src/point.cpp.o
 .PHONY : src/point.o
 
@@ -273,12 +310,36 @@ src/point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/point.cpp.s
 .PHONY : src/point.cpp.s
 
+src/triangle.o: src/triangle.cpp.o
+.PHONY : src/triangle.o
+
+# target to build an object file
+src/triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/triangle.cpp.o
+.PHONY : src/triangle.cpp.o
+
+src/triangle.i: src/triangle.cpp.i
+.PHONY : src/triangle.i
+
+# target to preprocess a source file
+src/triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/triangle.cpp.i
+.PHONY : src/triangle.cpp.i
+
+src/triangle.s: src/triangle.cpp.s
+.PHONY : src/triangle.s
+
+# target to generate assembly for a file
+src/triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_lib.dir/build.make CMakeFiles/shapes_lib.dir/src/triangle.cpp.s
+.PHONY : src/triangle.cpp.s
+
 tests/dummy_test.o: tests/dummy_test.cpp.o
 .PHONY : tests/dummy_test.o
 
 # target to build an object file
 tests/dummy_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/tests/dummy_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_test.dir/build.make CMakeFiles/dummy_test.dir/tests/dummy_test.cpp.o
 .PHONY : tests/dummy_test.cpp.o
 
 tests/dummy_test.i: tests/dummy_test.cpp.i
@@ -286,7 +347,7 @@ tests/dummy_test.i: tests/dummy_test.cpp.i
 
 # target to preprocess a source file
 tests/dummy_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/tests/dummy_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_test.dir/build.make CMakeFiles/dummy_test.dir/tests/dummy_test.cpp.i
 .PHONY : tests/dummy_test.cpp.i
 
 tests/dummy_test.s: tests/dummy_test.cpp.s
@@ -294,7 +355,7 @@ tests/dummy_test.s: tests/dummy_test.cpp.s
 
 # target to generate assembly for a file
 tests/dummy_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/tests/dummy_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_test.dir/build.make CMakeFiles/dummy_test.dir/tests/dummy_test.cpp.s
 .PHONY : tests/dummy_test.cpp.s
 
 tests/shapes_test.o: tests/shapes_test.cpp.o
@@ -302,7 +363,7 @@ tests/shapes_test.o: tests/shapes_test.cpp.o
 
 # target to build an object file
 tests/shapes_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/tests/shapes_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_test.dir/build.make CMakeFiles/shapes_test.dir/tests/shapes_test.cpp.o
 .PHONY : tests/shapes_test.cpp.o
 
 tests/shapes_test.i: tests/shapes_test.cpp.i
@@ -310,7 +371,7 @@ tests/shapes_test.i: tests/shapes_test.cpp.i
 
 # target to preprocess a source file
 tests/shapes_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/tests/shapes_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_test.dir/build.make CMakeFiles/shapes_test.dir/tests/shapes_test.cpp.i
 .PHONY : tests/shapes_test.cpp.i
 
 tests/shapes_test.s: tests/shapes_test.cpp.s
@@ -318,7 +379,7 @@ tests/shapes_test.s: tests/shapes_test.cpp.s
 
 # target to generate assembly for a file
 tests/shapes_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_tests.dir/build.make CMakeFiles/shapes_tests.dir/tests/shapes_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapes_test.dir/build.make CMakeFiles/shapes_test.dir/tests/shapes_test.cpp.s
 .PHONY : tests/shapes_test.cpp.s
 
 # Help Target
@@ -334,15 +395,22 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... dummy_test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... shapes_lib"
-	@echo "... shapes_tests"
+	@echo "... shapes_test"
+	@echo "... src/circle.o"
+	@echo "... src/circle.i"
+	@echo "... src/circle.s"
 	@echo "... src/point.o"
 	@echo "... src/point.i"
 	@echo "... src/point.s"
+	@echo "... src/triangle.o"
+	@echo "... src/triangle.i"
+	@echo "... src/triangle.s"
 	@echo "... tests/dummy_test.o"
 	@echo "... tests/dummy_test.i"
 	@echo "... tests/dummy_test.s"

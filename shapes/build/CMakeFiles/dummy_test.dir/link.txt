@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/dummy_test.dir/tests/dummy_test.cpp.o -o dummy_test  lib/libgtest_main.a lib/libgtest.a 

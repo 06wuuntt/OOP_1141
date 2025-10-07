@@ -69,10 +69,24 @@ include CMakeFiles/shapes_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/shapes_lib.dir/flags.make
 
+CMakeFiles/shapes_lib.dir/src/circle.cpp.o: CMakeFiles/shapes_lib.dir/flags.make
+CMakeFiles/shapes_lib.dir/src/circle.cpp.o: ../src/circle.cpp
+CMakeFiles/shapes_lib.dir/src/circle.cpp.o: CMakeFiles/shapes_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shapes_lib.dir/src/circle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shapes_lib.dir/src/circle.cpp.o -MF CMakeFiles/shapes_lib.dir/src/circle.cpp.o.d -o CMakeFiles/shapes_lib.dir/src/circle.cpp.o -c /home/wuuntt/1141_OOP/OOP_1141/shapes/src/circle.cpp
+
+CMakeFiles/shapes_lib.dir/src/circle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shapes_lib.dir/src/circle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wuuntt/1141_OOP/OOP_1141/shapes/src/circle.cpp > CMakeFiles/shapes_lib.dir/src/circle.cpp.i
+
+CMakeFiles/shapes_lib.dir/src/circle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shapes_lib.dir/src/circle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wuuntt/1141_OOP/OOP_1141/shapes/src/circle.cpp -o CMakeFiles/shapes_lib.dir/src/circle.cpp.s
+
 CMakeFiles/shapes_lib.dir/src/point.cpp.o: CMakeFiles/shapes_lib.dir/flags.make
 CMakeFiles/shapes_lib.dir/src/point.cpp.o: ../src/point.cpp
 CMakeFiles/shapes_lib.dir/src/point.cpp.o: CMakeFiles/shapes_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shapes_lib.dir/src/point.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shapes_lib.dir/src/point.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shapes_lib.dir/src/point.cpp.o -MF CMakeFiles/shapes_lib.dir/src/point.cpp.o.d -o CMakeFiles/shapes_lib.dir/src/point.cpp.o -c /home/wuuntt/1141_OOP/OOP_1141/shapes/src/point.cpp
 
 CMakeFiles/shapes_lib.dir/src/point.cpp.i: cmake_force
@@ -83,17 +97,35 @@ CMakeFiles/shapes_lib.dir/src/point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shapes_lib.dir/src/point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wuuntt/1141_OOP/OOP_1141/shapes/src/point.cpp -o CMakeFiles/shapes_lib.dir/src/point.cpp.s
 
+CMakeFiles/shapes_lib.dir/src/triangle.cpp.o: CMakeFiles/shapes_lib.dir/flags.make
+CMakeFiles/shapes_lib.dir/src/triangle.cpp.o: ../src/triangle.cpp
+CMakeFiles/shapes_lib.dir/src/triangle.cpp.o: CMakeFiles/shapes_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shapes_lib.dir/src/triangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shapes_lib.dir/src/triangle.cpp.o -MF CMakeFiles/shapes_lib.dir/src/triangle.cpp.o.d -o CMakeFiles/shapes_lib.dir/src/triangle.cpp.o -c /home/wuuntt/1141_OOP/OOP_1141/shapes/src/triangle.cpp
+
+CMakeFiles/shapes_lib.dir/src/triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shapes_lib.dir/src/triangle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wuuntt/1141_OOP/OOP_1141/shapes/src/triangle.cpp > CMakeFiles/shapes_lib.dir/src/triangle.cpp.i
+
+CMakeFiles/shapes_lib.dir/src/triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shapes_lib.dir/src/triangle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wuuntt/1141_OOP/OOP_1141/shapes/src/triangle.cpp -o CMakeFiles/shapes_lib.dir/src/triangle.cpp.s
+
 # Object files for target shapes_lib
 shapes_lib_OBJECTS = \
-"CMakeFiles/shapes_lib.dir/src/point.cpp.o"
+"CMakeFiles/shapes_lib.dir/src/circle.cpp.o" \
+"CMakeFiles/shapes_lib.dir/src/point.cpp.o" \
+"CMakeFiles/shapes_lib.dir/src/triangle.cpp.o"
 
 # External object files for target shapes_lib
 shapes_lib_EXTERNAL_OBJECTS =
 
+libshapes_lib.a: CMakeFiles/shapes_lib.dir/src/circle.cpp.o
 libshapes_lib.a: CMakeFiles/shapes_lib.dir/src/point.cpp.o
+libshapes_lib.a: CMakeFiles/shapes_lib.dir/src/triangle.cpp.o
 libshapes_lib.a: CMakeFiles/shapes_lib.dir/build.make
 libshapes_lib.a: CMakeFiles/shapes_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libshapes_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libshapes_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/shapes_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shapes_lib.dir/link.txt --verbose=$(VERBOSE)
 

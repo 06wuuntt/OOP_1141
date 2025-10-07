@@ -1,2 +1,2 @@
-# Empty dependencies file for shapes_tests.
+# Empty dependencies file for shapes_test.
 # This may be replaced when dependencies are built.

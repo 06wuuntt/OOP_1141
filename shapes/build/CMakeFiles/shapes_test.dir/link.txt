@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/shapes_test.dir/tests/shapes_test.cpp.o -o shapes_test  libshapes_lib.a lib/libgtest_main.a lib/libgtest.a 

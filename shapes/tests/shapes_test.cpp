@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include <cmath>
 #include "../src/point.h"
+#include "../src/triangle.h"
+#include "../src/circle.h"
 
 TEST(ShapeTest, Point) {
     Point p;
@@ -17,6 +19,18 @@ TEST(PointTest, DistanceBetweenTwoPoint) {
     EXPECT_NEAR(std::sqrt(2.0), distance(p, q), 0.001);
 }
 
-TEST(ShapeTest, Triangle345Case) {
-    
+TEST(ShapeTest, TriangleAreaTest) {
+    Point p = {0.0, 0.0};
+    Point q = {3.0, 0.0};
+    Point r = {0.0, 4.0};
+
+    Triangle t = {p, q, r};
+    EXPECT_NEAR(6.0, t.area(), 0.001);
+}
+
+TEST(ShapeTest, CircleTest) {
+    Point center = {0.0, 0.0};
+    Circle c = {center, 5.0};
+
+    EXPECT_NEAR(78.54, c.area(), 0.001);
 }

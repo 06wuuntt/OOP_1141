@@ -17,8 +17,8 @@ sorts the shapes in file _input.txt_ in decreasing order by perimeter, and write
 - [ ] F2: Write output file
 - [ ] F3: Shapes representation and computation
     - [x] T3.1: point
-    - [ ] T3.2: triangles
-    - [ ] T3.3: circle
+    - [x] T3.2: triangles
+    - [x] T3.3: circle
     - [ ] T3.4: rectangles
     - [ ] T3.5: convex polygon
 - [ ] F4: Sorting by area or perimeter

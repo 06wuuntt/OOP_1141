@@ -1,3 +1,6 @@
+#ifndef POINT_H
+#define POINT_H
+
 class Point {
     public:
         double x;
@@ -5,3 +8,5 @@ class Point {
 };
 
 double distance(Point p, Point q);
+
+#endif

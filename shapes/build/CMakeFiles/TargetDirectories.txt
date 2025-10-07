@@ -1,5 +1,6 @@
 /home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/shapes_lib.dir
-/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/shapes_tests.dir
+/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/dummy_test.dir
+/home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/shapes_test.dir
 /home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/test.dir
 /home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/edit_cache.dir
 /home/wuuntt/1141_OOP/OOP_1141/shapes/build/CMakeFiles/rebuild_cache.dir

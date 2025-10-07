@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/wuuntt/1141_OOP/OOP_1141/shapes/tests/dummy_test.cpp" "CMakeFiles/shapes_tests.dir/tests/dummy_test.cpp.o" "gcc" "CMakeFiles/shapes_tests.dir/tests/dummy_test.cpp.o.d"
-  "/home/wuuntt/1141_OOP/OOP_1141/shapes/tests/shapes_test.cpp" "CMakeFiles/shapes_tests.dir/tests/shapes_test.cpp.o" "gcc" "CMakeFiles/shapes_tests.dir/tests/shapes_test.cpp.o.d"
+  "/home/wuuntt/1141_OOP/OOP_1141/shapes/tests/shapes_test.cpp" "CMakeFiles/shapes_test.dir/tests/shapes_test.cpp.o" "gcc" "CMakeFiles/shapes_test.dir/tests/shapes_test.cpp.o.d"
   )
 
 # Targets to which this target links.
